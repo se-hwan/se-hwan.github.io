@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="icon" href="sai.png">
+<title>Movies</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+#about {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+
+
+.pBox{
+  background-color: #e6e6e6;
+  width: ;
+  border: 15px solid green;
+  border-color: #000066;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px; 
+}
+
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 65%;
+  border-left: none;
+  height: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="sidenav">
+  <a href="https://sjeon1.github.io">Homepage</a>
+  <!--Things I want to access easily or check regularly. Links to most commonly used sites, countdown, weather, location, temperature, date, reddit scraping for news?, social media, long term goals.-->
+  
+  <a href="https://sjeon1.github.io/projects">Projects</a>
+  <!--Record, documentation, and code for all projects made, as well as future plans-->
+  
+  <a href="https://sjeon1.github.io/books">Books</a>
+  <!--Records of all books read that I can remember, books i want to read, quotes from them, and maybe a review or two, quotes i like in general-->
+  
+  <a href="https://sjeon1.github.io/music">Music</a>
+  <!--Organized categories of music genres I like, maybe even recordings of me playing piano potentially-->
+  
+  <a href="https://sjeon1.github.io/movies">Movies</a>
+  <!--List of movies I've seen, my favourite scenes, movies i want to see, top 10 list-->
+  
+  <a href="https://sjeon1.github.io/art">Art</a>
+  <!--Art from reddit that I like, stuff I've drawn--, favourite famous paintings-->
+  
+  <a href="https://sjeon1.github.io/travels">Travels</a>
+  <!--my experiences in the places I've been in my life-->
+  
+  <a href="https://sjeon1.github.io/currentevents">Current Events</a>
+  <!--digestible summaries of current events around the world-->
+  
+  <a href="https://sjeon1.github.io/everythingelse">Everything Else</a>
+  <!--Bucket list, saved reddit posts, things i want to learn (long term sticky note), MFA deals (?), football news, bookmarked pages in Chrome, games I'm interested in, league, steam profile, history, cooking, dance, bucket list, things to buy, etc.-->
+  
+  <div id ="about">
+		<a href="https://sjeon1.github.io/about.html">About</a>
+		<!--metadata, version number, contact information, computer reinstallation text file-->
+  </div>
+</div>
+
+<div class="content">
+  <h2><i class="fas fa-film"></i> Movies</h2>
+  <h4>Or <a href="https://stephenfollows.com/film-vs-movie/">"Films"</a></h4>
+  I really don't watch a lot of TV shows, but there are a few sprinkled in here too.<br>
+  Someone I know accused me several times of getting too excited while describing a movie and spoiling it completely. I'll try my best to avoid that here. 
+  <div class="pBox">
+  <h4><i class="fas fa-star"></i> Favorites:</h4>
+  My favorite movies and shows. Might not be for everyone. 
+	<ul>
+		<li><b>Whiplash</b> - 2014</li>
+		<li><b>La La Land</b> - 2016</li>
+      <ul style="list-style-type:circle;">
+        <li>I've watched this too many times. I love how Damien Chazelle directs his movies.</li></ul>
+		<li><b>500 Days of Summer</b> - 2009</li>
+      <ul style="list-style-type:circle;">
+        <li>This starts out like a pretty cliche romcom, and it stays that way for a good while, and also arguably ends that way, but I still love this movie. It made me think about relationships in a different light. </li>
+      </ul>
+		<li><b>The Secret Life of Walter Mitty</b> - 2013</li>
+      <ul style="list-style-type:circle;">
+        <li>"To see the world, things dangerous to come to, to see behind walls, draw closer, to find each other, and to feel. That is the purpose of life."</li>
+        <li>I love the cinematography in this. <a href="https://www.youtube.com/watch?v=2ONCXOwIdx4">It</a> is so artistic and deliberate.</li>
+      </ul>
+    <li><b>Up in the Air</b> - 2009</li>
+    <li><b>Good Will Hunting</b> - 1997</li>
+      <ul style="list-style-type:circle;">
+        <li>It's hard for me to choose any particular scene for this because all of it is just so good.</li>
+        <li>But here's <a href="https://www.youtube.com/watch?v=oRG2jlQWCsY">one.</a>.</li>
+        <li>And <a href="https://www.youtube.com/watch?v=Xv7eeMikM_w">another.</a></li>
+        <li>Just one <a href="https://www.youtube.com/watch?v=Ea2-8Odwx74">more.</a></li>
+        <li>This movie's about so many things, but I like it the most because of how it shows what it means to be vulnerable to be someone else.</li></ul>
+    <li><b>Inception</b> - 2010</li>
+    <li><b>Avatar: The Last Airbender</b> - 2014</li>
+    <ul style="list-style-type:circle;">
+        <li>For what was supposed to be a kid's show, it deals with war, sacrifice, love, and responsibility in such creative ways. I grew up with this show, so nostalgia definitely plays a factor in it being placed here, but I've rewatched it many, many times and I only appreciate it more.</li>
+        <li>Toph.</li>
+      </ul>
+    <li><b>Bojack Horseman</b> - 2014-2020</li>
+    <ul style="list-style-type:circle;">
+        <li>This show could easily make you depressed. I've never met a show that feels more real, and its full of talking animals. You'll either get weirded out by it, or think it's one of the greatest shows ever - I haven't met many people who have tried it in between.</li>
+      </ul>
+    <li><b>Ratatouille</b> - 2007</li>
+    <li><b>Gladiator</b> - 2000</li>
+      <ul style="list-style-type:circle;">
+        <li>"What we do in life, echoes in eternity."</li>
+        <li><a href="https://www.youtube.com/watch?v=lKn-Agk-yAI">Shivers.</a></li>
+      </ul>
+    <li><b>Groundhog Day</b> - 1993</li>
+	</ul>
+  </div>
+  
+  <div class="pBox">
+  <h4><i class="fas fa-bookmark"></i> To Watch:</h4>
+	<ul>
+		<li><b>Blade Runner 2049</b></li>
+    <li><b>Shutter Island</b></li>
+    <li><b>Infinity War</b></li>
+    <li><b>Se7en</b></li>
+    <li><b>The Hurt Locker</b></li>
+    <li><b>No Country for Old Men</b></li>
+    <li><b>Goodfellas</b></li>
+    <li><b>Reservoir Dogs</b></li>
+    <li><b>Amelie</b></li>
+    <li><b>Oldboy</b></li>
+    <li><b>Okja</b></li>
+    <li><b>Ex Machina</b></li>
+    <li><b>The Good, the Bad, and the Ugly</b></li>
+    <li><b>The Princess Bride</b></li>
+    <li><b>Leon: The Professional</b></li>
+    <li><b>American Psycho</b></li>
+    <li><b>Ferris Bueller's Day Off</b></li>
+    <li><b>Taxi Driver</b></li>
+    <li><b>Princess Mononoke</b></li>
+    <li><b>Casino Royale</b></li>
+    <li><b>47 Ronin</b></li>
+    <li><b>Kimi no Na wa</b></li>
+    <li><b>Ghost in the Shell</b></li>
+    <li><b>Akira</b></li>
+	</ul>
+  </div>
+
+
+    
+  <div class="pBox">
+  <h4><i class="fas fa-ticket-alt"></i> An Inexhaustive List of Great Movies I've Watched:</h4>
+  <ul>
+
+    <li><b>Batman Begins</b></li>
+    <li><b>The Dark Knight</b></li>
+    <li><b>The Dark Knight Rises</b></li>
+    <li><b>The Dark Knight Returns, Part I & II</b></li>
+      <ul style="list-style-type:circle;">
+        <li>What Batman vs. Superman could have been.</li>
+        <li>Moments like Batman telling Superman, a near god, he <a href="https://www.youtube.com/watch?v=y0ukzHm-Py4">could have gone easy on him</a> chills me every time I watch them. So much could have been done with the source material that was alreadey all laid out.</li>
+        <li>The Dark Knight Trilogy is probably the best representation of Batman in film, but if I have one critique of Nolan's movies, it's that the action pales in comparison to Snyder's. <a href="https://www.youtube.com/watch?v=sBVTyLLZG58">This</a> scene from Batman vs. Superman is perfect. Nothing needs to be changed.</li>
+      </ul>
+    <li><b>Eternal Sunshine of a Spotless Mind</b></li>
+    <ul style="list-style-type:circle;">
+        <li>Jim Carrey has so much range as an actor. I thought he was great in the Truman Show, but I'd say he's almost better in this.</li>
+        <li>A really original, bittersweet take on finding "the one".</li>
+      </ul>
+    <li><b>Interstellar</b></li>
+    <li><b>The Shawshank Redemption</b></li>
+    <ul style="list-style-type:circle;">
+        <li>Originally a story by Stephen King!</li>
+        <li>Also wrote The Green Mile.</li>
+      </ul>
+    <li><b>Django Unchained</b></li>
+    <li><b>Pulp Fiction</b></li>
+    <li><b>Inglorious Basterds</b></li> 
+            <ul style="list-style-type:circle;">
+        <li>Another one of the best opening scenes I've seen. The tension in the farmhouse scene is unrivaled. Also, just ridiculous and funny throughout.</li>
+      </ul>
+    <li><b>Memento</b></li>
+      <ul style="list-style-type:circle;">
+        <li>Really good example of how directing can completely change a movie. If it was told conventionally, it would still be a solid story with an interesting premise, but the main character's quirk just works so well with Nolan's non-linearity.</li>
+      </ul>
+    <li><b>The Matrix Trilogy</b></li>
+    <li><b>The Ip Man Trilogy</b></li>
+    <li><b>Toy Story 1, 2, 3</b></li>
+    <li><b>Monsters Inc.</b></li>
+    <li><b>Finding Nemo</b></li>
+    <li><b>The Incredibles</b></li>
+    <li><b>Wall-E</b></li>
+    <ul style="list-style-type:circle;">
+        <li>Love the music in this.</li>
+      </ul>
+    <li><b>Up</b></li>
+    <li><b>Inside Out</b></li>
+      <ul style="list-style-type:circle;">
+        <li>Can't get over how smart this movie is.</li>
+        <li>Pixar knocked it out of the park for like a decade straight.</li>
+        <li>Then they made The Good Dinosaur.</li>
+      </ul>
+    <li><b>The Departed</b></li>
+    <ul style="list-style-type:circle;">
+        <li>One of my favorite opening <a href="https://www.youtube.com/watch?v=kIsyHKsjftY">scenes</a> of any movie.</li>
+      </ul>
+    <li><b>Forrest Gump</b></li>
+    <li><b>Moonlight</b></li>
+    <li><b>The Prestige</b></li>
+        <ul style="list-style-type:circle;">
+        <li>Really underrated Nolan movie.</li>
+      </ul>
+    <li><b>Shaun of the Dead</b></li>
+    <li><b>Hot Fuzz</b></li>
+    <li><b>Blade Runner</b></li>
+    <li><b>The Truman Show</b></li>
+    <li><b>The Star Wars Saga</b></li>
+    <li><b>The Usual Suspects</b></li>
+    <li><b>V for Vendetta</b></li>
+        <ul style="list-style-type:circle;">
+        <li>Never expected Hugo Weaving's voice to sound so <a href="https://www.youtube.com/watch?v=Z4RCK8LAFM0">amazing</a>.</li>
+      </ul>
+    <li><b>Airplane</b></li>
+    <li><b>Terminator 2: Judgement Day</b></li>
+            <ul style="list-style-type:circle;">
+        <li>Too many good scenes in this movie to count. The chase scene, the famous "hasta la vista", the thumbs up, etc.</li>
+      </ul>
+    <li><b>The Social Network</b></li>
+    <li><b>Howl's Moving Castle</b></li>
+    <li><b>Spirited Away</b></li>
+    <li><b>Totoro</b></li>
+    <li><b>Dead Poets Society</b></li>
+    <li><b>12 Angry Men</b></li>
+            <ul style="list-style-type:circle;">
+        <li>My stats teacher in high school made us all watch this as an example of false positives in hypothesis testing. </li>
+      </ul>
+    <li><b>The Lion King</b></li>
+    <li><b>Iron Man</b></li>
+    <li><b>The Indiana Jones Trilogy</b></li>
+      <ul style="list-style-type:circle;">
+        <li>The Crystal Skull one doesn't count as a movie.</li>
+      </ul>
+    <li><b>Coco</b></li>
+    <li><b>Arrested Development</b></li>
+    <li><b>BlackkkKlansmen</b></li>
+    <li><b>This Means War</b></li>
+    <li><b>Locke</b></li>
+            <ul style="list-style-type:circle;">
+        <li>The entire movies is Tom Hardy talking on a phone in a car for 45 minutes. I really, really recommend this. Made me gain a lot of respect for how much expression and voice can carry a story. </li>
+      </ul>
+    <li><b>Kingsman</b></li>
+    <li><b>Rick and Morty</b></li>
+    <li><b>Eddie the Eagle</b></li>
+    <li><b>Joker</b></li>
+            <ul style="list-style-type:circle;">
+        <li>I thought it was a good movie, but I never want to watch it again. Incredibly uncomfortable and tense throughout. </li>
+      </ul>
+    <li><b>Speed</b></li>
+    <li><b>Back to the Future</b></li>
+    <li><b>The Shining</b></li>
+    <li><b>A Beautiful Mind</b></li>
+
+
+
+  </ul>
+  </div>
+  
+</div><p></p>
+
+</body>
+</html>

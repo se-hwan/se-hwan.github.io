@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="icon" href="sai.png">
+<title>Projects</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+#about {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.pBox{
+  background-color: #e6e6e6;
+  width: 100vw-300;
+  border: 15px solid green;
+  border-color: #000066;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd;}
+
+</style>
+</head>
+<body>
+<div class="sidenav">
+  <a href="https://sjeon1.github.io">Homepage</a>
+  <!--Things I want to access easily or check regularly. Links to most commonly used sites, countdown, weather, location, temperature, date, reddit scraping for news?, social media, long term goals.-->
+  
+  <a href="https://sjeon1.github.io/projects">Projects</a>
+  <!--Record, documentation, and code for all projects made, as well as future plans-->
+  
+  <a href="https://sjeon1.github.io/books">Books</a>
+  <!--Records of all books read that I can remember, books i want to read, quotes from them, and maybe a review or two, quotes i like in general-->
+  
+  <a href="https://sjeon1.github.io/music">Music</a>
+  <!--Organized categories of music genres I like, maybe even recordings of me playing piano potentially-->
+  
+  <a href="https://sjeon1.github.io/movies">Movies</a>
+  <!--List of movies I've seen, my favourite scenes, movies i want to see, top 10 list-->
+  
+  <a href="https://sjeon1.github.io/art">Art</a>
+  <!--Art from reddit that I like, stuff I've drawn--, favourite famous paintings-->
+  
+  <a href="https://sjeon1.github.io/travels">Travels</a>
+  <!--my experiences in the places I've been in my life-->
+  
+  <a href="https://sjeon1.github.io/currentevents">Current Events</a>
+  <!--digestible summaries of current events around the world-->
+  
+  <a href="https://sjeon1.github.io/everythingelse">Everything Else</a>
+  <!--Bucket list, saved reddit posts, things i want to learn (long term sticky note), MFA deals (?), football news, bookmarked pages in Chrome, games I'm interested in, league, steam profile, history, cooking, dance, bucket list, things to buy, etc.-->
+  
+  <div id ="about">
+		<a href="https://sjeon1.github.io/about.html">About</a>
+		<!--metadata, version number, contact information, computer reinstallation text file-->
+  </div>
+</div>
+
+<div class="content">
+  <h2><i class="fas fa-cogs"></i> Projects</h2>
+  <div class="dropdown">
+  <button class="dropbtn">Navigation</button>
+  <div class="dropdown-content">
+  <a href="#website">Personal Website</a>
+	<a href="#pyro">Triple Junction Plasma Current Enhancement</a>
+	<a href="#lstm">LSTM Function Prediction Model</a>
+  <a href="#clockAngles">Clock Angles</a>
+	<a href="#glados">GLaDOS</a>
+  <a href="#monopoly">Monopoly Simulation</a>
+	<a href="#airbud">Air Bud 1</a>
+  <a href="#arduinoProjects">Arduino Projects</a>
+	<a href="#pizza">Oven Design Project</a>
+	<a href="#reactor">Nuclear Reactor Design Project</a>
+  <a href="#review">Review Papers for Courses</a>
+  <a href="#designtools">Design Tools Projects</a>
+  </div>
+</div>
+  <p>
+  
+	
+	
+	<!--WEBSITE PROJECT-->
+	
+	
+  <div class="pBox" id="website">	
+	<img src="/images/websiteScreenshot1.0.png" width="1000" class="center">
+	<h2><b>Personal Website</b></h2>
+	<h4>Description/Motivation</h4>
+	A website for my personal use. It is a disaster of copy-pasted snippets of code, widgets, and barely functioning CSS held together by wishful thinking. The push history on Github really exemplifies this. I'm glad that it's more or less functional, instead of something like <a href="https://www.reddit.com/r/Ooer/">this</a>. I wanted a record of all the things I've worked on, read, watched, and enjoyed, so as ugly as it is, this is my website - <a href="https://en.wikipedia.org/wiki/Rifleman%27s_Creed">there are many like it, but this one is mine.</a>
+	<h4>Status</h4>
+	Indefinitely under construction. 
+	<h4>Resources Used, Files, and Comments</h4>
+	<a href="https://www.w3schools.com/default.asp">W3Schools</a> has been invaluable to me for its educational resources for HTML and CSS.
+	All my files for this website (although why anyone would want them is beyond me) can be found on my <a href="https://github.com/sjeon1/sjeon1.github.io">GitHub Repository</a>. My homepage background is currently a photograph by Oleg Magni titled "White Black Lined Wall", which is pretty descriptive. It can be found <a href="https://www.pexels.com/photo/white-black-lined-wall-1024613/">here</a>.
+	<p>After struggling so much with trying to set up a website, I realized that I truly hate HTML. I thought that Fortran and LaTeX were finicky, but I've never felt so defeated trying to change the margins on a box to be just right. When I browse smooth and seamless websites now, I can appreciate the efforts of the people behind them.</p>
+	<p>That being said, the whole process of learning how GitHub works, committing my changes to a master copy, learning HTML and CSS, and trying to organize aspects of my life has been very rewarding. This website is simply just an organized portal of the things I like doing and browsing on the internet, and that's all I planned for it to be.</p>
+	<h4>Future Changes</h4>
+	<ul>
+		<li>Make home page more visually appealing</li>
+		<li>Learn how to add javascript elements</li>
+		<li>Live location tracker for weather widget</li>
+		<li>Come up with a better logo</li>
+	</ul>
+	
+  </div>
+  
+  
+  <div class="pBox" id="pyro">
+	<!--ADD GIF OR VIDEOS AS NEEDED-->
+	<img src="/images/plasma.jpg" width="500" class="center">
+	<h2><b>Triple Junction Plasma Current Enhancement</b></h2>
+	<h4>Description/Motivation</h4>
+	I've been working on this project with Dr. Go since May of 2019 with funding from the NDnano fellowship. Building off the <a href="https://iopscience.iop.org/article/10.1088/0963-0252/23/6/065018/pdf">work</a> of Dr. Michael Johnson, a PhD graduate from Notre Dame, I recreated his experimental rig that heated a pyroelectric crystal orthogonal to a needle counter-electrode. The needle was connected to a picoammeter that recorded the current of the generated plasma, and the data was collected using LabView. Taking long-exposure images of the needle tip, I found similar visual results to what Dr. Johnson reported (which is the picture above), and the measured currents matched his results as well. <br><br>
+  From there, I explored strategies to enhance the resultant plasma current from the crystal. I tested various crystals, counter-electrodes, and surface modifications, and by utilizing what were known as "triple junctions" in the plasma science literature (the intersection of a dielectric, gas, and metal), I was able to enhance the current by an order of 10 by applying silver paint to the surface of the crystal. We found that the geometry of the applied paint would significantly affect the resultant current, with a sharper angle resulting in a higher current. These empirical results were corroborated with COMSOL modeling. The crystal, silver paint, and plate counter-electrode were modeled in 2D, and a significant enhancement of the electric field was seen at the triple junction that corresponded with literature values for the breakdown of air. <br><br>
+  The currents obtained are on the order of nanoamps, which would be difficult to translate into any significant application. In terms of research however, there are strong signs that simple surface modifications can enhance plasma current from these dielectric crystals. This setup could easily be applied to a piezoelectric controlled more directly by mechanical vibration, which does have practical and industrial uses. Being able to control and enhance the resultant current from a different crystal may be viable with further work. 
+	<h4>Status</h4>
+	Ongoing. Currently working on moving my testing rig into a vacuum chamber and modeling the system in 3D in COMSOL to further confirm results and determine if pyroelectric electron emission is observed. 
+	<h4>Resources Used, Files, and Reflections</h4>
+	<a href="\files\goResearch\NDnano Luncheon Slides_SeHwanJeon.pdf">NDnano Presentation</a><br>
+  <a href="\files\goResearch\2019_Poster_NDnano_SJeon.pdf">NDnano Poster Presentation</a>. I tried to design a less traditional poster, using <a href="http://betterposters.blogspot.com/">this</a> as a guide. <br>
+  <a href="\files\goResearch\2019 NURF project summary.pdf">Project Summary</a>
+  <a href="\files\goResearch\Jeon Fall Semester Paper.pdf">Report</a>
+	<h4>Future Changes</h4>
+	<ul>
+		<li>Continue reading literature on electric field enhancements</li>
+		<li>Move testing rig into vacuum chamber</li>
+    <li>Run 3D triple junction simulation on computer clusters</li>
+	</ul>
+  </div>
+  
+  
+
+    
+  <div class="pBox" id="lstm">
+  <!--ADD GIF OR VIDEOS AS NEEDED-->
+  <h2><b>LSTM Function Prediction Model</b></h2>
+  <h4>Description/Motivation</h4>
+  With Dr. Ryan McClarren, I worked on trying to develop a machine learning model that could accept an arbitrarily large matrix and return its dominant eigenvalues with less computational cost than traditional methods like power iteration. When I began this project, I had absolutely no experience with deep learning models and I felt like I've learnt a lot from the experience. Machine learning-like algorithms seems to be more and more prevalent every day, from the <a href="https://arxiv.org/pdf/1808.04327.pdf">medical field</a> to <a href="https://emerj.com/ai-sector-overviews/machine-learning-in-robotics/">robotics</a>, and I hope I'd be able to comfortably use it myself as well. The files below represent my progress so far - I created a program that could predict the next value of a function given a set of data points and one that deteremined the dominant eigenvalues of 3x3 matrices. 
+  <h4>Status</h4>
+  Paused and uncertain - because of studying abroad and time constraints, I wasn't able to continue the project, and at this point it's been more than a year since I've last played around with Python or Keras. I hope that I'd be able to get back into this - I still feel very interested in being able to use machine learning for a variety of applications. <a href="http://introtodeeplearning.com/">This</a> seems like a good place to start when I have the time. 
+  <h4>Resources Used, Files, and Reflections</h4>
+  <a href="https://github.com/sjeon1/function-prediction">GitHub repository</a>
+  <h4>Future Changes</h4>
+  <ul>
+    <li>Expand model to accept arbitrary matrix size</li>
+    <li>Estimate training and prediction times required</li>
+  </ul>
+  </div>
+
+  
+
+ <div class="pBox" id="clockAngles">
+  <!--ADD GIF OR VIDEOS AS NEEDED-->
+  <img src="\images\ClockAngles.jpg" width="250">
+  <h2><b>Clock Angles</b></h2>
+  <h4>Description/Motivation</h4>
+  At some point, I was sitting through lecture for a class I absolutely hated, and to maintain some semblance of sentience and attention, I focused on the analog clock that was in the room waiting for the time to tick by. Desperately bored, I had this random thought - <i>when would the minute and hour hand be straight?</i> Of course, the obvious answers would be at noon and at 6:00, but I realized that there would be many, many other times as well when this would happen. Remembering that I had learned how to use rotation matrices in the past few weeks, I realized I could easily write a program to determine the necessary times. If I represented the position of the hour and minute hand as vectors, and multiplied them by the rotation matrix at discrete intervals, the dot product of their positions would give me information regarding their linearity. Because I assumed a discretely ticking analog clock, I had to account for some wiggle room in the orthogonality condition, but it was still fairly accurate. I think I had so much fun with this project because, in a very, very small way, I had a question new to me (I'm sure this has been done before, but I did not look at any references), thought about how I'd go about answering it, and found a solution. No textbook, no Chegg, no outside help - I used the mathematical tools I had learned and applied them independently, and it felt incredibly satisfying. Now I have a new piece of trivia I can use to impress people at parties. 
+  <h4>Status</h4>
+  Complete<br>
+  Solutions: <br>
+  The clock hands will be linear at 12:00, 12:33, 1:05, 1:38, 2:11, 2:44, 3:16, 3:49, 4:22, 4:55, 5:27, 6:00, 6:33, 7:05, 7:38, 8:11, 8:44, 9:16, 9:49, 10:22, 10:55, 11:27.
+  The clock hands are orthogonal at 12:16, 12:50, 1:20, 1:54, 2:27, 3:00, 3:32, 4:05, 4:38, 5:10, 5:43, 6:16, 6:49, 7:21, 7:54, 8:27, 9:00, 9:32, 10:05, 10:38, 11:10, 11:43. 
+  <h4>Resources Used, Files, and Reflections</h4>
+  <a href="https://github.com/sjeon1/clockAngles">GitHub Repository</a>
+  <h4>Future Changes</h4>
+  <ul>
+    <li>Animate the clock hands moving, pausing at key angles</li>
+    <li>Look into more efficient ways of calculating new positions - program takes a while to run</li>
+  </ul>
+  </div>
+
+
+
+      
+  <div class="pBox" id="glados">
+ 
+  <h2><b>GLaDOS</b></h2>
+  <h4>Description/Motivation</h4>
+  Portal 2 is absolutely one of my favorite games ever, and after learning about rotation matrices in a class I took, I realized it wouldn't be too hard to make, or at least program, something that moved in the same way as GLaDOS in the game. She was just a robotic arm (voiced by <a href="https://en.wikipedia.org/wiki/Ellen_McLain">Ellen McLain</a>) with multiple degrees of freedom. My thought process was that I'd be able to use servos to model a smaller, simpler GLaDOS, and report back the position of some defined position vector (probably at her "eye") as the servos moved to arbitrary rotation position. 
+  <h4>Status</h4>
+  In progress - currently working on CAD model for case of GLaDOS to hold battery pack and LED eye. Working on Arduino program that will report current position with respect to origin to Serial Monitor. 
+  <h4>Resources Used, Files, and Reflections</h4>
+  <a href="https://github.com/sjeon1/glados">Github repository</a>
+  <h4>Future Changes</h4>
+  <ul>
+    <li>Finish rotation program</li>
+    <li>Design shell in CAD, 3D print</li>
+  </ul>
+  </div>
+
+
+        
+  <div class="pBox" id="monopoly">
+  <!--ADD GIF OR VIDEOS AS NEEDED-->
+  <img src="\images\Frequency Simulation.png" width="500">
+  <h2><b>Monopoly Simulation</b></h2>
+  <h4>Description/Motivation</h4>
+  Another one of my curiosity projects. I have this bad habit of wanting to optimize the games I play instead of just enjoying them. I was curious about which tiles in Monopoly people would land on most, and more interestingly, which of those were propertied. Of course, with the number of turns played in an average monopoly game (answers seem to vary, but a few forums seem to say between <a href="https://boardgames.stackexchange.com/questions/33181/what-is-the-average-number-of-turns-in-a-game-of-monopoly">30-45</a> turns is about right) compared to my simulation runs (1000+), I doubt this would give me the edge over any game I actually played (putting my personal skill at Monopoly aside), but it was still a fun thought experiment. 
+  <h4>Status</h4>
+  Complete. <br>
+  The most common tile landed on is, pretty intuitively, the jail tile (since there are two tiles that will place a player there). The second most common is the chance tile 7 tiles away from that jail cell, and the tile most landed upon that was propertied is Tenessee Avenue. Of course, it should be noted that I did not take into account all the other rules of Monopoly (from the effects of chance cards, being sent to jail, etc.), and this is strictly based on tolls alone. A more complete study of Monopoly can be found <a href="https://tesuji.org/monopoly.html">here</a>. Taking those into account, Illinois Avenue should be every player's first buy, but at the end of the day, the difference is so small that it would hardly make a difference for a regular game. 
+  <h4>Resources Used, Files, and Reflections</h4>
+  <a href="https://github.com/sjeon1/monopoly">Github repository</a>
+  <h4>Future Changes</h4>
+  <ul>
+    <li>Animate simulation</li>
+    <li>Take other variables of the game into account, confirm results</li>
+  </ul>
+  </div>
+
+
+
+
+
+  <div class="pBox" id="airbud">
+  <!--ADD GIF OR VIDEOS AS NEEDED-->
+  <img src="\images\airbud1.jpeg" width="500">
+  <h2><b>Air Bud 1</b></h2>
+  <h4>Description/Motivation</h4>
+  A group of friends and I wanted to make something over one of our fall breaks sophomore year for fun. From a <a href="https://store.flitetest.com/">hobby store</a>, we bought parts to assemble a plane, but things went wrong at every step of the way. We needed to figure out how to program the controller, actually pair it with the controller, learn what an ESC was, the battery pack was drained on arrival and we needed to install an alternate one, and so on. At some point it was almost fully assembled when I realized I had installed the motor backwards. Another time, I accidentally attached the motor directly to the battery pack and it began smoking. It was a miracle that it actually flew. The very first flight, it crashed straight into the ground. One hasty trip to CVS later, we flew it again patched up with duct tape. Our very best flight, it was airborne for maybe a minute or two before going into a tree. Overall, 10/10 experience, hope I can do it again some day. 
+  <h4>Status</h4>
+  Deceased<br>
+  Highly, highly doubt it will ever fly again. Now serves as wall ornamentation. 
+  <h4>Resources Used, Files, and Reflections</h4>
+  Looks like the model we bought is discontinued. <a href="https://store.flitetest.com/flite-test-versa-wing-speed-build-electric-airplane-kit-965mm-flt-1009/p673673">This</a> is probably the most similar to it. 
+  <h4>Future Changes</h4>
+  <ul>
+    <li>None. Let it rest.</li>
+  </ul>
+  </div>
+
+
+
+
+  <div class="pBox" id="arduinoProjects">
+  <!--ADD GIF OR VIDEOS AS NEEDED-->
+  <img src="\images\arduino.jpg" width="500">
+  <h2><b>Various Arduino Projects</b></h2>
+  <h4>Description/Motivation</h4>
+  After taking Electrical Engineering, I became really interested in using microcontrollers and programming actuators. I bought <a href="https://www.amazon.com/EL-KIT-008-Project-Complete-Ultimate-TUTORIAL/dp/B01EWNUUUA/ref=pd_sbs_328_t_0/145-4524330-9903942?_encoding=UTF8&pd_rd_i=B01EWNUUUA&pd_rd_r=e92a312b-7693-4d02-a3a6-059120b7abc3&pd_rd_w=mpKzo&pd_rd_wg=cjWts&pf_rd_p=5cfcfe89-300f-47d2-b1ad-a4e27203a02a&pf_rd_r=6B86GPZ042D25PBX87CG&psc=1&refRID=6B86GPZ042D25PBX87CG">this</a> great kit to get started, and made a variety of little side projects from them. A motion detector alarm, an interface that would respond to button presses, joystick servo controller, and a little <a href="https://v.redd.it/rk1yq3ti67e21/DASH_240">eight-bit music player</a> that played the Super Mario theme. The last was the most interesting for me personally, because using a tiny speaker, I had to translate sheet music into code, from the note being played to the pauses between them. I didn't think the two could work so well together, and I love it when my interests in different topics converge in some way. 
+  <h4>Status</h4>
+  Complete
+  <h4>Resources Used, Files, and Reflections</h4>
+  <a href="https://github.com/sjeon1/arduinoProjects">GitHub repository</a>
+  <h4>Future Changes</h4>
+  <ul>
+    <li>None</li>
+  </ul>
+  </div>
+
+
+
+  <div class="pBox" id="pizza">
+  <!--ADD GIF OR VIDEOS AS NEEDED-->
+  <img src="\images\pizzaOven.png" width="500">
+  <h2><b>Oven Design Project</b></h2>
+  <h4>Description/Motivation</h4>
+  For my heat transfer course, our final project involved designing an oven that could effectively cook a pizza (we were studying abroad in Rome at the time, and of course, wanted to respect and observe the local culture). Our group wanted to design an oven that could cook a pizza fully within a minute, unhappy with the relaxed and deliberate attention given to each pizza at the restaurants we had been to. We wanted pure, mechanical efficiency to dish out these pizzas as fast as possible. 
+  <h4>Status</h4>
+  Complete. <br>
+  The written report can be viewed <a href="\files\PizzaProject.pdf">here</a>. 
+  <h4>Resources Used, Files, and Reflections</h4>
+  The major equations came from <a href="https://www.tandfonline.com/doi/full/10.1081/JFP-120015599">this</a> paper concerning pizza baking properties. I had no idea there even was an International Journal of Food Properties. 
+  <h4>Future Changes</h4>
+  <ul>
+    <li>None</li>
+  </ul>
+  </div>
+
+
+
+
+
+  <div class="pBox" id="reactor">
+  <!--ADD GIF OR VIDEOS AS NEEDED-->
+  <h2><b>Nuclear Reactor Design Project</b></h2>
+  <h4>Description/Motivation</h4>
+  For a nuclear science elective I took, the final project involved designing a nuclear reactor with the intent of creating some target nuclei through fission or decay, and estimate the cost and profit (disregarding things like infrastructure, power, etc.) from the enterprise. I chose Europium because of how rare and valuable it was, but as it turns out, the idea probably wouldn't hold up if proposed in Shark Tank. As a whole, I still feel like the chemistry and physics involved at atomic levels is too abstract and uncomfortable for me. I enjoyed the class, but it was hard for me to marry the derived equations with their physical components. An equation like F=ma just seems so natural and logical, because I can imagine a block being pushed on a frictionless surface. It's harder to do the same with a spinning electron following some crazy random pattern in a loosely defined electric field. 
+  <h4>Status</h4>
+  Complete<br>
+  My report can be found <a href="/files/reactor.pdf">here</a>.
+  <h4>Resources Used, Files, and Reflections</h4>
+  As simplified as the model was, I enjoyed taking the concepts we had learned in class and directly applying them to real-world applications. While the proposal was never meant to be realistic, the project could easily have been expanded to calculate the generated power, or viability as a fuel source for deep ocean or space exploration, and so on. 
+  <h4>Future Changes</h4>
+  <ul>
+    <li>None</li>
+  </ul>
+  </div>
+
+
+
+
+    <div class="pBox" id="review">
+  <!--ADD GIF OR VIDEOS AS NEEDED-->
+  <h2><b>Review Papers for Courses</b></h2>
+  <h4>Description/Motivation</h4>
+  Many of my courses incorporated writing review papers as part of the syllabus. These can be read as examples of my technical writing and presentation. 
+  <h4>Status</h4>
+  Complete.<br>
+  <a href="\files\Biomaterials Paper.pdf">Corneal Implants Review</a><br>
+  <a href="\files\Biomaterials Presentation.pdf">Cornea Implants Presentation</a><br>
+  <a href="\files\Biomechanics_Final_Report.pdf">Soft Robotics Review</a><br>
+  <a href="\files\Term Project.pdf">Biomimetic Tissue Engineering Proposal</a><br>
+  <a href="\files\Research_Paper_Review.pdf">Planetary Gearsystem Article Review</a>
+  <h4>Resources Used, Files, and Reflections</h4>
+  After spending two years writing nothing but reports and technical material, I struggled so much to write an essay for a required theology class my junior year. I should try to make sure I don't get rusty with either. 
+  <h4>Future Changes</h4>
+  <ul>
+    <li>None</li>
+  </ul>
+  </div>
+
+
+
+
+    <div class="pBox" id="designtools">
+  <!--ADD GIF OR VIDEOS AS NEEDED-->
+  <h2><b>Design Tools Projects</b></h2>
+  <h4>Description/Motivation</h4>
+  Two of our courses at Notre Dame were called "Design Tools", and involved learning how to use CAD software and prototyping concepts. To be honest, I was really disappointed with both. I learned how to use Creo Parametric, but the projects felt so contrived with little room for creativity. For example, one of our projects involved designing a fidget spinner, which, with all due respect, wasn't exactly an engineering challenge that made I could struggle and thrive with. What we made that was a little more involved was a mechanism that could be mounted on a drone body to sample water. It was more interesting, but still felt too "projecty" because we only designed a frame and mechanism that <i>could</i> work in theory. We weren't given microcontrollers, or a test frame to mount the mechanism too, etc. 
+  <h4>Status</h4>
+  Complete.<br>
+  <a href="\files\AME 21268 Project 2 - Group 6.pdf">Final Presentation for drone mechanism project.</a>
+  <h4>Resources Used, Files, and Reflections</h4>
+  If I could critique anything about Notre Dame, I wish its engineering courses involved more hands-on projects. My background so far has felt mainly theoretical. 
+  <h4>Future Changes</h4>
+  <ul>
+    <li>None</li>
+  </ul>
+  </div>
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  </p>
+</div>
+
+</body>
+</html>

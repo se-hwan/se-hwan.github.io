@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="sai.png">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<title>Everything Else</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+#about {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+
+.pBox{
+  background-color: #e6e6e6;
+  width: ;
+  border: 15px solid green;
+  border-color: #000066;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px; 
+}
+
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd;}
+
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #000066;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="sidenav">
+  <a href="https://sjeon1.github.io">Homepage</a>
+  <!--Things I want to access easily or check regularly. Links to most commonly used sites, countdown, weather, location, temperature, date, reddit scraping for news?, social media, long term goals.-->
+  
+  <a href="https://sjeon1.github.io/projects">Projects</a>
+  <!--Record, documentation, and code for all projects made, as well as future plans-->
+  
+  <a href="https://sjeon1.github.io/books">Books</a>
+  <!--Records of all books read that I can remember, books i want to read, quotes from them, and maybe a review or two, quotes i like in general-->
+  
+  <a href="https://sjeon1.github.io/music">Music</a>
+  <!--Organized categories of music genres I like, maybe even recordings of me playing piano potentially-->
+  
+  <a href="https://sjeon1.github.io/movies">Movies</a>
+  <!--List of movies I've seen, my favourite scenes, movies i want to see, top 10 list-->
+  
+  <a href="https://sjeon1.github.io/art">Art</a>
+  <!--Art from reddit that I like, stuff I've drawn--, favourite famous paintings-->
+  
+  <a href="https://sjeon1.github.io/travels">Travels</a>
+  <!--my experiences in the places I've been in my life-->
+  
+  <a href="https://sjeon1.github.io/currentevents">Current Events</a>
+  <!--digestible summaries of current events around the world-->
+  
+  <a href="https://sjeon1.github.io/everythingelse">Everything Else</a>
+  <!-- saved reddit posts, things i want to learn (long term sticky note), MFA deals (?), football news, bookmarked pages in Chrome, games I'm interested in, league, steam profile, history, cooking, dance, bucket list, things to buy, etc.-->
+  
+  <div id ="about">
+		<a href="https://sjeon1.github.io/about.html">About</a>
+		<!--metadata, version number, contact information, computer reinstallation text file-->
+  </div>
+</div>
+
+<div class="content">
+  <h2><i class="fab fa-ethereum"></i> Everything Else</h2>
+  <h4>My bucket list, saved links I found interesting, thing I want to learn in the long-term, the games I'm interested in - essentially, everything else about me.</h4>
+ 
+<div class="dropdown">
+  <button class="dropbtn">Navigation</button>
+  <div class="dropdown-content">
+    <a href="#bucketList">Bucket List</a>
+    <a href="#bookmarks">Bookmarks</a>
+	  <a href="#games">Games</a>
+    <a href="#games">Games</a>
+  </div>
+</div>
+
+  <div class="pBox" id="bucketList">
+	<h3>Bucket List</h3>
+	If I get even half of these done, I'd feel pretty fulfilled. That being said, most of the fun is working towards them, so I feel pretty happy about them regardless. <br>
+		<button class="accordion">Obtain a pilot's license</button>
+<div class="panel">
+  <p>Takes about two weeks and $5000. The latter requirement is the issue at the moment, but it seems doable eventually.</p>
+</div>
+
+<button class="accordion">Visit Scotland</button>
+<div class="panel">
+  <p>That scene in Parks and Rec where Ron visits Scotland and recites a <a href="http://www.robertburns.org/works/416.shtml">poem</a> from Leslie made me more emotional than I expected. The countryside seems so beautiful.</p>
+  <p>One of my favorite teachers from high school also lives there. I hope I'd be able to see her again at some point.</p>
+</div>
+
+<button class="accordion">Become a professor</button>
+<div class="panel">
+  <p>Can't imagine any other job I'd enjoy more. It would be so rewarding to teach and make people understand something they didn't before.</p>
+</div>
+<button class="accordion">Go to space</button>
+<div class="panel">
+  <p>If you're not skilled enough to be an astronaut, you can just shell out bundles of money <a href="https://en.wikipedia.org/wiki/Space_tourism">instead.</a></p>
+</div>
+<button class="accordion">Visit the Colosseum <i class="fas fa-check"></i></button>
+<div class="panel">
+  <p>Accomplished January, 2019 while studying abroad in Rome as part of the University of Notre Dame.</p>
+  <p><a href="https://www.youtube.com/watch?v=uQQZR-Skftk">Whatever comes out of these gates...</a></p>
+</div>
+<button class="accordion">Score a goal with a bicycle kick</button>
+<div class="panel">
+  <p><a href="https://www.youtube.com/watch?v=FFsPMhCMjjw">Pretty self-explanatory.</a></p>
+</div>
+<button class="accordion">Learn how to woodwork</button>
+<div class="panel">
+  <p>Again inspired by Ron Swanson. It seems relaxing in how slow and gradual the process is.</p>
+</div>
+<button class="accordion">Learn My Dearest on piano</button>
+<div class="panel">
+  <p>I'm not sure why, but I get such bittersweet vibes from this <a href="https://www.youtube.com/watch?v=Pi8xsZXibIc">piece.</a></p>
+</div>
+<button class="accordion">Learn Isn't She Lovely on guitar</button>
+<div class="panel">
+  <p>Big fan of Sungha Jung. The <a href="https://www.youtube.com/watch?v=o0NJiasWrLc">song</a> itself is so vibrant too.</p>
+</div>
+<button class="accordion">Climb a mountain <i class="fas fa-check"></i></button>
+<div class="panel">
+  <p>Accomplished March, 2019. While studying abroad in Rome, three of us traveled to Greece and climbed Mount Olympus.</p>
+  <p>It was snowy and cold, and we were dressed in jeans and t-shirts. Well-worth it.</p>
+  <img src="/images/remembrall.jpg" style="width:100%">
+</div>
+<button class="accordion">Be someone's best man at a wedding</button>
+<div class="panel">
+  <p>If you have a big group of close friends, I feel like it'd be uncomfortable to choose which should be your best man. If you're asked to be someone's best man, does that imply you should ask them back? These are the questions Home Ec needs to answer.</p>
+</div>
+<button class="accordion">Grow and eat my own food</button>
+<div class="panel">
+  <p>I feel like this would be a good idea for everyone to do at some point. It would contextualize the convenience and variety of access we have to all our food.</p>
+</div>
+<button class="accordion">Keep bees and face a lifelong fear</button>
+<div class="panel">
+  <p>I'm terrified of bees.</p>
+  <p>But the world needs more bees.</p>
+  <p>And Sherlock Holmes kept bees in retirement.</p>
+  <p>And I like honey.</p>
+</div>
+<button class="accordion">Adopt a dog/cat</button>
+<div class="panel">
+  <p>First order of business after entering graduate school or getting my own place is adopting the most miserable looking cat or dog from a shelter and adoring it obnoxiously.</p>
+</div>
+<button class="accordion">Design my own home</button>
+<div class="panel">
+  <p>If I hadn't changed my major from business to mechanical engineering, I absolutely would have become an architect. I doubt I'll be able to fully design a home from the ground up, but I hope to have a home that feels like it was made for me.</p>
+</div>
+<button class="accordion">Visit a national park in the U.S.</button>
+<div class="panel">
+  <p>The parks are often cited to be the best aspect of the U.S., and I've still never been.</p>
+</div>
+<button class="accordion">See castles in Kyoto and go to a Japanese festival</button>
+<div class="panel">
+  <p>I've always wanted to see fireworks and the traditional architecture of Japan.</p>
+  <p>Friends and I have made plans to visit this winter, so hopefully we'll see both of these.</p>
+</div>
+<button class="accordion">Become a bartender</button>
+<div class="panel">
+  <p>When I tell people about this, most don't expect it of me.</p>
+  <p>But I really love the idea of washing glasses in a shirt and vest in some small, quiet, but well-maintained bar, when some haggard businessman walks in.</p>
+  <p>He lets out a huge sigh and asks for the usual, slumped over the counter, and after mixing it, I'd slide it down the bartop over to him and ask him about his day.</p>
+  <p>I really enjoy being someone's confidant, and letting them vent to relax would make me feel pretty satisfied. Maybe I could work part-time for this.</p>
+</div>
+<button class="accordion">Learn how to make a good cup of coffee</button>
+<div class="panel">
+  <p>This is 100% due to Persona 5 and Tokyo Ghoul, not going to lie.</p>
+  <p>I'm a big fan of the atmosphere of coffee shops. The smells and conversation and chance to quietly read make me feel really relaxed. Currently, I'm practicing with the Hario V60 <a href="https://www.youtube.com/watch?v=AI4ynXzkSQo">pourover</a> method, but I still don't think my coffee tastes great yet.</p>
+</div>
+<button class="accordion">Become friends with a stranger on a plane</button>
+<div class="panel">
+  <p>I hate flying. I also don't think I'm great at making friends, so this is a small goal of mine. May be more difficult than the others on the list though.</p>
+</div>
+<button class="accordion">Obtain my Ph.D.</button>
+<div class="panel">
+  <p>I don't really care for being called "Doctor" (and my closer friends would call me that exclusively to make me embarrarssed), but it's what the PhD represents that makes me think that 4-6 years in school and debt may be <a href="http://matt.might.net/articles/phd-school-in-pictures/">worth it</a>. </p>
+</div>
+<button class="accordion">Learn violin and cello</button>
+<div class="panel">
+  <p>As I described on my Music page, these have such unique sounds that I love to hear.</p>
+</div>
+<button class="accordion">Get a personal 3D printer</button>
+<div class="panel">
+  <p>There's a whole <a href="https://www.reddit.com/r/functionalprint/">subreddit</a> dedicaed to printing functional things. I would also want to print things like <a href="https://www.thingiverse.com/thing:2839481">this</a>.</p>
+</div>
+<button class="accordion">See lava in person</button>
+<div class="panel">
+  <p>There's no real motivation for this. I just think it's cool.</p>
+</div>
+<button class="accordion">See my sister get married (or just be content in general, I'm not old fashioned)</button>
+<div class="panel">
+  <p>God knows at least one of us should make our parents happy.</p>
+</div>
+<button class="accordion">Ride the Venice-Simplon Orient Express</button>
+<div class="panel">
+  <p>Hopefully, I wouldn't get murdered.</p>
+</div>
+<button class="accordion">Become fluent in another language</button>
+<div class="panel">
+  <p>As of now, I'd most want to learn German or Japanese. I'm at a weird place where my native language is Korean, but my English is way, way better. Because of this, my general sense of grammar is nowhere to be found.</p>
+</div>
+<button class="accordion">Run a marathon</button>
+<div class="panel">
+  <p>The best I've done so far is a half-marathon, at 1 hour and 45 minutes. I ran the Holy Half at Notre Dame with a friend, and had so much fun. We just chatted the whole way. I woke up late and ran in sweatpants. I also tripped and fell on a rock during the race at some point.</p>
+</div>
+<button class="accordion">Host (cook) a huge dinner for friends and guests</button>
+<div class="panel">
+  <p>I want a big, cliche dinner party where I have appetizers and entrees and desserts all prepared, Beauty and the Beast style. Need to get better at cooking first though.</p>
+</div>
+<button class="accordion">Shoot at a gun range</button>
+<div class="panel">
+  <p>Just something I want to try once.</p>
+</div>
+<button class="accordion">Publish a paper</button>
+<div class="panel">
+  <p>To be able to put a new work of knowledge in the field, with my name on it, would feel pretty momentous to me. The beginning of my academic career. An h-index that may become non-zero.</p>
+</div>
+<button class="accordion">Start a business</button>
+<div class="panel">
+  <p>Later in life, a friend and I have tossed around ideas to start a bakery, or a bar, or a cafe, or some combination of the three. When we're old and hopefully well off, it would be nice to have something to work on.</p>
+</div>
+<button class="accordion">Go to a concert</button>
+<div class="panel">
+  <p>Need to go before I lose my hearing. I've already lost my eyesight.</p>
+  <p>I hope I can see the Rolling Stones before Mick Jagger passes away. To be honest, I'm a little amazed he's not only hanging in there, but still kicking and screaming at every concert.</p>
+</div>
+<button class="accordion">Learn the saxophone</button>
+<div class="panel">
+  <p>Another Ron Swanson-inspired dream.</p>
+</div>
+<button class="accordion">Marry</button>
+<div class="panel">
+  <p>Odds are looking slim.</p>
+</div>
+<button class="accordion">Tailor my own/someone else's clothes successfully</button>
+<div class="panel">
+  <p>I feel like it would be such a useful skill to have.</p>
+  <p>Generally, I want to learn a bunch of hands-on skills that I never had the chance to in my more academic upbringing.</p>
+</div>
+<button class="accordion">Have a personal library with all my favorite books</button>
+<div class="panel">
+  <p>Like Belle's library in Beauty and the Beast.</p>
+</div>
+<button class="accordion">Gold rank in League of Legends</button>
+<div class="panel">
+  <p>I've played this game for three years now and I'm still silver.</p>
+  <p>Please help.</p>
+</div>
+<button class="accordion">Learn how to ice-skate well</button>
+<div class="panel">
+  <p>Ice skating just looks so graceful and smooth. I have no desire to do jumps and spins, but I'd love to be able to comfortably glide around on the ice for fun.</p>
+</div>
+<button class="accordion">Learn the ocarina</button>
+<div class="panel">
+  <p>Completely inspired by the Legend of Zelda.</p>
+</div>
+
+
+	
+	
+  </div>
+  
+  <div class="pBox" id="bookmarks">
+	<h3>Bookmarks[one of these should link to an inspo album]</h3>
+	<button class="accordion">[LINK CATEGORY 1]</button>
+<div class="panel">
+  <p><a href="">Link</a></p>
+  <p><a href="">Link</a></p>
+  <p><a href="">Link</a></p>
+</div>
+
+<button class="accordion">[LINK CATEGORY 2]</button>
+<div class="panel">
+  <p><a href="">Link</a></p>
+  <p><a href="">Link</a></p>
+  <p><a href="">Link</a></p>
+</div>
+
+<button class="accordion">[LINK CATEGORY 3]</button>
+<div class="panel">
+  <p><a href="">Link</a></p>
+  <p><a href="">Link</a></p>
+  <p><a href="">Link</a></p>
+</div>
+
+
+  </div>
+  
+  <div class="pBox" id="games">
+	<h3>Games</h3>
+	Games I play: [list?]
+	Steam profile?
+  </div>
+  
+	
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+  
+  
+  
+  
+  
+</div>
+
+</body>
+</html>

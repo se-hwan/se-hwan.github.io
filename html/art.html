@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="sai.png">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<title>Art</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+#about {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+
+.pBox{
+  background-color: #e6e6e6;
+  width: ;
+  border: 15px solid green;
+  border-color: #000066;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px; 
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE 10 */
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd;}
+
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #000066;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="sidenav">
+  <a href="https://sjeon1.github.io">Homepage</a>
+  <!--Things I want to access easily or check regularly. Links to most commonly used sites, countdown, weather, location, temperature, date, reddit scraping for news?, social media, long term goals.-->
+  
+  <a href="https://sjeon1.github.io/projects">Projects</a>
+  <!--Record, documentation, and code for all projects made, as well as future plans-->
+  
+  <a href="https://sjeon1.github.io/books">Books</a>
+  <!--Records of all books read that I can remember, books i want to read, quotes from them, and maybe a review or two, quotes i like in general-->
+  
+  <a href="https://sjeon1.github.io/music">Music</a>
+  <!--Organized categories of music genres I like, maybe even recordings of me playing piano potentially-->
+  
+  <a href="https://sjeon1.github.io/movies">Movies</a>
+  <!--List of movies I've seen, my favourite scenes, movies i want to see, top 10 list-->
+  
+  <a href="https://sjeon1.github.io/art">Art</a>
+  <!--Art from reddit that I like, stuff I've drawn--, favourite famous paintings-->
+  
+  <a href="https://sjeon1.github.io/travels">Travels</a>
+  <!--my experiences in the places I've been in my life-->
+  
+  <a href="https://sjeon1.github.io/currentevents">Current Events</a>
+  <!--digestible summaries of current events around the world-->
+  
+  <a href="https://sjeon1.github.io/everythingelse">Everything Else</a>
+  <!--Bucket list, saved reddit posts, things i want to learn (long term sticky note), MFA deals (?), football news, bookmarked pages in Chrome, games I'm interested in, league, steam profile, history, cooking, dance, bucket list, things to buy, etc.-->
+  
+  <div id ="about">
+		<a href="https://sjeon1.github.io/about.html">About</a>
+		<!--metadata, version number, contact information, computer reinstallation text file-->
+  </div>
+</div>
+
+<div class="content">
+  <h2><i class="fas fa-palette"></i>Art</h2>
+  <h4>Things I've created and art I like.</h4> <br>
+   <div class="dropdown">
+  <button class="dropbtn">Navigation</button>
+  <div class="dropdown-content">
+    <a href="#internet">Internet Art I Like</a>
+    <a href="#historical">Historical Art I Like</a>
+    <a href="#myself">Things I've Made</a>
+  </div>
+</div>
+  All images from the internet are linked to their original post or the artist themselves. Please don't sue me. <br>
+  If there are any images that should be taken down, please let me know. <br>
+
+
+
+  <div class="pBox" id="internet">
+	<h3>Art from Around the Internet</h3>
+	Browsing reddit and the Internet as much as I do, I often see art that I really like for their content or artistic style that I save to use as inspiration. None of these are my works.
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <a href="https://www.reddit.com/r/ImaginarySliceOfLife/comments/dvlwuy/quick_hell_be_back_soon_by_neytirix/"><img src="https://i.redd.it/op9izx39ldy31.jpg" style="width:100%"></a>
+	<a href="https://www.reddit.com/r/ImaginarySliceOfLife/comments/d9vtcn/you_forgot_mjs_soda_jay_kim/"><img src="https://i.imgur.com/Zi93EtD.png" style="width:100%"></a>
+	<a href="https://www.reddit.com/r/HollowKnight/comments/d51f7w/anyone_know_who_this_artist_is/"><img src="https://i.redd.it/l6k4n6rruym31.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/ce6uam/variations_on_the_old_guitarist_me_acrylic_2019/"><img src="https://i.redd.it/6lx2qb0xyra31.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/cd3ekz/the_galaxy_rui_li_digital_2018/"><img src="https://i.redd.it/gki8i2j01aa31.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/cb0tq8/got_milk_ram%C3%B3n_nu%C3%B1ez_digital_2019/"><img src="https://i.redd.it/5pgem5f84a931.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/c7bivo/white_tailed_bumblebee_me_hand_embroidery_on/"><img src="https://i.redd.it/b9h8862mxg731.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/c634rm/small_postcard_for_a_friend_me_ink2019/"><img src="https://i.redd.it/ezlvo3up4v631.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/visualizedmath/comments/b3bmp2/p5js_the_halvorsen_attractor/"><img src="https://i.redd.it/5eaa86qet9n21.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/awijr7/crossing_digital_1350x1800px/"><img src="https://i.imgur.com/ML2KGik.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/awu78k/spiders_watercolor_8_x_12/"><img src="https://i.redd.it/5wj8fbbztwj21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/PixelArt/comments/awhjvl/ron_cobb_skybox_1990/"><img src="https://i.redd.it/3izo6efsepj21.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/aqeq16/system_failure_ii_oil_on_canvas_31x43/"><img src="https://i.redd.it/0ipko3nb1gg21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/aoya0b/hornet_acrylic_on_hexagonal_panel_6/"><img src="https://i.imgur.com/JOZkRnd.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Cyberpunk/comments/amsf93/urban_ninja/"><img src="https://i.redd.it/zimzqtibeee21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/aluwyr/rocking_solo_mixed_media_55x85/"><img src="https://i.redd.it/tbfltvpd1ud21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/BokuNoHeroAcademia/comments/alvcdx/a_very_all_might_looking_dude_by_me/"><img src="https://i.redd.it/lhlgsx1s8ud21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/anime_irl/comments/aicgnw/anime_irl/"><img src="https://i.redd.it/zx0v349nbtb21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Breath_of_the_Wild/comments/ahsc3j/the_champions_of_hyrule/"><img src="https://i.redd.it/5j9c8mrh4hb21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/af7r2o/habitat_by_sarah_webb_digital_2013/"><img src="https://i.imgur.com/vEmTrgO.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/batman/comments/ac7brg/the_dark_knight_returns_from_recess_jl8/"><img src="https://i.imgur.com/LB5BF1J.jpg" style="width:100%"></a>
+  
+
+
+
+  </div>
+  <div class="column">
+    <a href="https://www.reddit.com/r/pokemon/comments/dlhjuj/subject487/"><img src="https://i.redd.it/suajs2b5b3u31.jpg" style="width:100%"></a>
+	<a href="https://www.reddit.com/r/marvelstudios/comments/cz4xlz/anyone_agrees_that_yusuke_murata_one_punch_man/"><img src="https://i.redd.it/zxxicl4nsdk31.jpg" style="width:100%"></a>
+	<a href="https://www.reddit.com/r/HollowKnight/comments/c2tidt/the_knight_and_his_friends_inufuji15_on_twitter/"><img src="https://i.redd.it/508l9kfl3h531.jpg" style="width:100%"></a>
+  <a href="https://www.reddit.com/r/streetmoe/comments/c2ih1j/zero_two_with_graffiti_2000x3000/"><img src="https://i.redd.it/x1k16069yb531.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/NintendoSwitch/comments/c1pfe9/starry_night_breath_of_the_wild_my_mom_painted_me/"><img src="https://i.redd.it/3btjulcdyx431.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/streetmoe/comments/bv1eck/three_fits/"><img src="https://i.imgur.com/f8BBAkw.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/space/comments/bktxkc/nasa_posters_for_the_orion_program/"><img src="https://i.redd.it/lxypnz8llbw21.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/streetwear/comments/bjwe04/art_i_painted_some_hitops/"><img src="https://i.redd.it/x1pz438chtv21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/pokemon/comments/b662tg/thought_it_would_be_appropriate_to_post_this_here/"><img src="https://i.redd.it/px4kbnu3roo21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/b69ay3/and_now_you_die_amigo_digital_1314_%D1%85_1552/"><img src="https://i.redd.it/zjcyzdh91qo21.jpg" style="width:100%"></a>
+        <a href=""><img src="" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Cyberpunk/comments/azeupq/kochy_my_friend_by_ismail_inceoglu/"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/63be4f70034289.5b9635ff1e1c8.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/PixelArt/comments/b20j1q/knight_oc/"><img src="https://i.redd.it/2ip94frbclm21.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/streetwear/comments/b2pv61/art_pink_and_purple_pineapple/"><img src="https://i.redd.it/l8bhkcv2rym21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/b3fgs7/nin_yang_liner_and_marker_55x85/"><img src="https://i.redd.it/9t1gs81hgbn21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Cyberpunk/comments/8viaf0/cyberpunk_fashion_by_yunior_guerra/"><img src="https://i.redd.it/xdofqhex4j711.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/zelda/comments/8t1pfp/a_gorgeous_lowpoly_link_animation_by_ui8/"><img src="https://i.redd.it/v5f7uy9k8k511.gif" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Marvel/comments/8pymbs/deadpool_2_by_evgeny_yurichev/"><img src="https://i.redd.it/ffpmj0yms3311.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/8oa2v6/afterburner_digital_5700x3555/"><img src="https://i.redd.it/jkf9br1blt111.jpg" style="width:100%"></a>
+
+
+
+
+
+  </div>  
+
+
+
+
+  <div class="column">
+    <a href="https://www.reddit.com/r/ImaginarySliceOfLife/comments/djlxo9/craftsman_%E3%81%8C%E3%82%93%E3%81%BD%E3%82%93/"><img src="https://i.redd.it/hx9umnmd8at31.jpg" style="width:100%"></a>
+	<a href="https://www.reddit.com/r/ImaginarySliceOfLife/comments/cdftyz/%EC%84%B1%EB%A5%A0/"><img src="https://i.imgur.com/rDoyxHj.jpg" style="width:100%"></a>
+	<a href="https://www.reddit.com/r/ImaginarySliceOfLife/comments/bkhgfg/creme_brulee_sandara/"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/31a92255-861d-40f4-ad78-a2efd309b0d2/dcisgr3-fe328094-5042-48c7-bb88-01383a65ddd8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMxYTkyMjU1LTg2MWQtNDBmNC1hZDc4LWEyZWZkMzA5YjBkMlwvZGNpc2dyMy1mZTMyODA5NC01MDQyLTQ4YzctYmI4OC0wMTM4M2E2NWRkZDguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KGrzDjlCJj0uLshwwZEDZDBot3F3kgTha3VXkSGHssI" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/abtfwp/appointment_%E4%B8%89%E6%9C%88_digital_2016/"><img src="https://i.redd.it/to1rk6lqi0821.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/castlevania/comments/ab462s/hd_sypha_belnades/"><img src="https://i.redd.it/36n05chctj721.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/drawing/comments/aa0zfq/a_quick_expression_study_i_love_her_eyes/"><img src="https://i.imgur.com/jujQ2i1.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/a7llv3/super_edgy_occult_priest_digital_2500x3500/"><img src="https://i.redd.it/zdcpg6crz7521.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/FireEmblemHeroes/comments/a4b9rp/roy_sketch/"><img src="https://i.redd.it/0g6hsc2fh2321.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/drawing/comments/a47w2l/wolf_study/"><img src="https://i.redd.it/rwifxor2mz221.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/awmhdr/smoke_signal_acrylic_16x20/"><img src="https://i.redd.it/dx82etb2vrj21.jpg" style="width:100%"></a>
+        <a href="https://www.reddit.com/r/Rainbow6/comments/74m71p/sorry_peoplebeen_really_busy_recently_so_this_is/"><img src="https://i.redd.it/4fuoysmf06qz.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Breath_of_the_Wild/comments/7ba1v4/link_and_zelda_sleeping_together_botw_crosspost/"><img src="https://i.imgur.com/TGMGOro.jpeg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/BoJackHorseman/comments/7kjxn4/not_mine_but_i_thought_you_guys_should_see_it/"><img src="https://i.redd.it/elkplxwe3n401.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/drawing/comments/7v0ke6/ink_fun/"><img src="https://i.redd.it/16yywe0b61e01.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/9vm8of/star_kimono_by_clivenzu_traditional_2018/"><img src="https://i.redd.it/9lwp4tp78cx11.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/drawing/comments/ecddxt/peace_was_never_an_option_ink_on_paper/"><img src="https://i.redd.it/snnbemafke541.jpg" style="width:100%"></a>
+  </div>
+
+
+
+
+
+  <div class="column">
+    <a href="https://www.reddit.com/r/HollowKnight/comments/dj4dt0/the_knight_wielding_a_needle/"><img src="https://i.redd.it/an4cay4xu2t31.jpg" style="width:100%"></a>
+	<a href="https://www.reddit.com/r/ImaginarySliceOfLife/comments/cjcp7b/witnessing_a_grand_whale_migration_while_waiting/"><img src="https://cdn.awwni.me/1d0mr.jpg" style="width:100%"></a>
+	<a href="https://www.reddit.com/r/drawing/comments/dq41t1/watercolor_and_brush_pen/"><img src="https://i.redd.it/04zifsb5r2w31.jpg" style="width:100%"></a>
+  <a href="https://www.reddit.com/r/CasualUK/comments/cfwm16/piss_off_thou_winged_chip_snatching_git_gf_and_i/"><img src="https://i.redd.it/k6203gge2mb31.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/bfbxnf/departure_digital_1500x2000px/"><img src="https://i.imgur.com/PWAhGK1.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/PixelArt/comments/b5ck7k/autumn_in_hakone_japan/"><img src="https://i.redd.it/1zl8qka0hao21.gif" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/ImaginaryTechnology/comments/b53crj/rosie_by_josh_guglielmo/"><img src="https://cdnb.artstation.com/p/assets/images/images/016/784/459/large/josh-guglielmo-ageoftheatom-com-rosie.jpg?1553467270" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Cyberpunk/comments/b58k15/and_now_you_come_to_me_and_ask_me_for_a_favour/"><img src="https://i.redd.it/0hfruu0vk8o21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/awjc9y/the_great_wave_off_kanagawa_acrylic_on_wood_10x22/"><img src="https://i.redd.it/42y4zkqteqj21.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/ax5ocq/the_most_boring_job_in_the_battlefield_by_john/"><img src="https://cdna.artstation.com/p/assets/images/images/013/907/762/large/john-nugroho-boring-job-on-battlefield-flatten.jpg" style="width:100%"></a>
+        <a href="https://www.reddit.com/r/harrypotter/comments/9uqc5v/dumbledores_downtime_by_yaoyao_ma_van_as_digital/"><img src="https://66.media.tumblr.com/5a4636b16b0c1774e00ac6e2170ea089/tumblr_p0g2sgIBXe1tqqs3no1_1280.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/9q2f7u/halloween_xi_zhang_digital_2018/"><img src="https://i.redd.it/1lkaxr8ngit11.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/StreetFighter/comments/9csbax/this_realistic_street_fighter_art_is_amazing/"><img src="https://i.redd.it/cj9atvcqd5k11.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/lowpoly2d/comments/3bg9r8/african_bush_viper/"><img src="http://i.imgur.com/oDm0aKA.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Art/comments/9o1uu3/moscow_prayer_andrey_shatilov_oil_2018/"><img src="https://pbs.twimg.com/media/DpFyKCdX4AAwa0I.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/ImaginaryTechnology/comments/9elyan/war_roc_by_kino_scialabba/"><img src="https://cdna.artstation.com/p/assets/images/images/003/599/836/large/kino-scialabba-war-roc.jpg?1475472618" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/ImaginaryTechnology/comments/96qc0w/atatm_all_terrain_armored_tape_measure/"><img src="https://i.redd.it/bv6zaf9mxof11.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/Cyberpunk/comments/94r260/%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E3%83%91%E3%83%B3%E3%82%AF/"><img src="https://i.redd.it/zhadmhz999e11.jpg" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/pokemon/comments/8l3rkm/hey_folks_awhile_ago_my_cousin_asked_me_to_draw/"><img src="https://i.redd.it/75cd25yrk9z01.png" style="width:100%"></a>
+    <a href="https://www.reddit.com/r/drawing/comments/5gbp95/first_attempt_at_3point_perspective/"><img src="https://i.redd.it/syhz4cch1f1y.jpg" style="width:100%"></a>
+  </div>
+
+</div>
+
+
+
+  </div>
+  
+  
+  <div class="pBox" id = "historical">
+	<h3>Historical</h3>
+	I wouldn't consider myself anything near knowledgable about art, but between my sister majoring in painting, my artistic mother, and some classes I've taken, a few historical artworks have stood out to me as favorites. 
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+	<a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+	<a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+
+  </div>
+  <div class="column">
+    <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+	<a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+	<a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  </div>  
+  <div class="column">
+    <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+	<a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+	<a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+	<a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+	<a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  </div>
+</div>
+
+  </div>
+
+  
+
+<div class="pBox" id="myself">
+  <h3>What I've Made</h3>
+  I rarely do more than doodle, but some of those doodles I'm pretty proud of. A collection of pieces I've made. This'll require me scanning or photographing all my art, and will probably take a good while. Under construction. 
+  
+  
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <a href=""><img src="/images/wedding.jpg" style="width:100%"></a>
+  <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  </div>  
+  <div class="column">
+    <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  <a href=""><img src="/w3images/wedding.jpg" style="width:100%"></a>
+  </div>
+</div>
+  
+  </div>
+
+
+
+</div>
+
+</body>
+</html>
