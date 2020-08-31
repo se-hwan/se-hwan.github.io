@@ -1,1 +1,2 @@
-# se-hwan.github.io
+# Description
+Repository for personal website. 
